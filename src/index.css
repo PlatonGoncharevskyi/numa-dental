@@ -1,0 +1,18 @@
+@import "./fonts.css";
+@import "tailwindcss";
+
+html, body {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.font-blont {
+    font-family: "Blont", sans-serif !important;
+    font-feature-settings: normal;
+    font-variation-settings: normal;
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateY(-12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
