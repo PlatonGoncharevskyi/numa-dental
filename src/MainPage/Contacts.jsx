@@ -46,7 +46,7 @@ export default function Contacts() {
           max-w-[260px] lg:max-w-none
         "
       >
-        ЧАС РОБОТИ З 8:00 ДО 21:00 (БЕЗ ВИХІДНИХ)
+        ЧАС РОБОТИ ПН-ПТ З 9:00 ДО 20:00<br></br> СБ-НД З 10:00 ДО 18:00
       </p>
 
       {/* PHONES */}
@@ -64,20 +64,6 @@ export default function Contacts() {
             ЗАПИС У NUMA.DENTAL
           </div>
         </div>
-
-        {/* PHONE 2 */}
-        <div className="flex flex-col items-center">
-          <a
-            href="tel:+380638725529"
-            className="text-[28px] xl:text-[30px] lg:text-[30px] hover:opacity-70 transition"
-          >
-            +380 (63) 872-55-29
-          </a>
-          <div className="mt-2 text-[12px]  xl:text-[12px] lg:text-[12px] tracking-[0.35em] uppercase text-[#666] font-medium">
-            ЗАПИС У NUMA.DENTAL
-          </div>
-        </div>
-
       </div>
 
       {/* ADDRESS BLOCK */}
@@ -108,7 +94,7 @@ export default function Contacts() {
         >
           Київ,<br />
           вул.Василя Тютюнника<br />
-          51/1
+          51/1-a
         </div>
 
         {/* MAP RIGHT */}

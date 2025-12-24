@@ -35,8 +35,8 @@ export default function Footer() {
             </Link>
 
             <p className="text-[15px] leading-[22px] opacity-90">
-              Ліцензовано згідно із наказом МОЗ України №2224 від <br />
-              01.10.2020. numa.dental
+              Ліцензовано згідно із наказом МОЗ України №2765 від <br />
+              13.12.2021. numa.dental
             </p>
           </div>
 
