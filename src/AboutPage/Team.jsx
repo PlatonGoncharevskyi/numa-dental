@@ -34,11 +34,6 @@ export default function Team(){
       role: "ЛІКАР-ТЕРАПЕВТ, ЕНДОДОНТ",
       img: img2,
     },
-    {
-      name: "Анастасія Бочкун",
-      role: "ЛІКАР-ПАРАДАНТОЛОГ",
-      img: img2,
-    },
   ];
 
   return (
