@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { FaInstagram, FaViber, FaTelegramPlane, FaWhatsapp } from "react-icons/fa";
+import { IoCall } from "react-icons/io5";
 import { FiMenu, FiX } from "react-icons/fi";
 
 export default function Header() {
@@ -8,7 +9,6 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [openFromTop, setOpenFromTop] = useState(true); 
 
-  // Show floating button when scrolling
   useEffect(() => {
     const handleScroll = () => {
       setShowCircle(window.scrollY > 150);
@@ -17,7 +17,6 @@ export default function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Close mobile menu when scrolling UP
   useEffect(() => {
     let lastY = window.scrollY;
 
@@ -99,6 +98,9 @@ export default function Header() {
             <a href="https://wa.me/380933891363" target="_blank" className="p-2 rounded-full bg-[#333333] text-white text-[20px] hover:bg-[#E6E6E6] hover:text-[#333] hover:scale-110 transition"><FaWhatsapp /></a>
             <a href="viber://chat?number=%2B380933891363" target="_blank" className="p-2 rounded-full bg-[#333333] text-white text-[20px] hover:bg-[#E6E6E6] hover:text-[#333] hover:scale-110 transition"><FaViber /></a>
             <a href="https://t.me/numa_dental" target="_blank" className="p-2 rounded-full bg-[#333333] text-white text-[20px] hover:bg-[#E6E6E6] hover:text-[#333] hover:scale-110 transition"><FaTelegramPlane /></a>
+          </div>
+          <div className="flex md:hidden landscape:hidden items-center gap-3 mr-6 mb-2">
+            <a href="tel:+380933891363" className="p-2 rounded-full bg-[#333333] text-white text-[20px] hover:bg-[#E6E6E6] hover:text-[#333] hover:scale-110 transition"><IoCall /></a>
           </div>
         </div>
       </header>

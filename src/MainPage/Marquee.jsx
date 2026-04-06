@@ -42,7 +42,7 @@ export default function Marquee() {
           className="
             flex 
             whitespace-nowrap
-            animate-[marqueeScroll_15s_linear_infinite]
+            animate-[marqueeScroll_25s_linear_infinite]
           "
         >
           {items.map((item, index) => (

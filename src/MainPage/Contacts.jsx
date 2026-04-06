@@ -75,7 +75,7 @@ export default function Contacts() {
           lg:max-w-[680px]
           mx-auto my-14
           px-1
-          lg:px-10 py-8
+          lg:px-10 py-3
           bg-transparent
           text-[#333]
         "
@@ -88,7 +88,7 @@ export default function Contacts() {
             leading-[28px]
             text-[18px]
             font-semibold
-            pb-10
+            pb-5
             lg:pt-10
           "
         >
@@ -96,34 +96,19 @@ export default function Contacts() {
           вул.Василя Тютюнника<br />
           51/1-a
         </div>
+        {/* Карта */}
+        <div className="w-full h-[300px] lg:h-[310px]  overflow-hidden shadow-lg border-2 border-[#5c5c5c]/20">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2542.2715529916804!2d30.5279622!3d50.417412!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cfa0cc2749fd%3A0x1472c176c387d613!2sNuma.dental!5e0!3m2!1suk!2sua!4v1775505797195!5m2!1suk!2sua" 
+          width="400" 
+          height="300" 
+          style={{ border: 0 }}
+          allowFullScreen={true}
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Numa Dental Location">
+          </iframe>
+        </div>
 
-        {/* MAP RIGHT */}
-        <a
-          href="https://www.google.com/maps/place/Numa.dental+%7C+%D0%A1%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%BE%D0%BB%D0%BE%D0%B3%D1%96%D1%8F+%D0%9A%D0%B8%D1%97%D0%B2+%7C+%D0%B2%D0%BB%D0%B0%D1%81%D0%BD%D0%B0+%D0%BB%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D1%96%D1%8F+%7C+%D1%81%D1%83%D1%87%D0%B0%D1%81%D0%BD%D1%96+%D0%BA%D0%B5%D1%80%D0%B0%D0%BC%D1%96%D1%87%D0%BD%D1%96+%D0%B2%D1%96%D0%BD%D1%96%D1%80%D0%B8+%7C+%D1%96%D0%BC%D0%BF%D0%BB%D0%B0%D0%BD%D1%82%D0%B8+%D0%BF%D1%96%D0%B4+%D0%BA%D0%BB%D1%8E%D1%87/@50.4178297,30.5280052,17z/data=!3m1!4b1!4m6!3m5!1s0x40d4cfa0cc2749fd:0x1472c176c387d613!8m2!3d50.4178297!4d30.5280052!16s%2Fg%2F11qs1kdq9s?entry=ttu&g_ep=EgoyMDI1MTExNy4wIKXMDSoASAFQAw%3D%3D"
-          target="_blank"
-          className="
-            uppercase
-            tracking-[0.28em]
-            text-[14px]
-            font-medium
-            flex flex-col items-center
-            gap-2
-            transition
-            group
-          "
-        >
-          <span
-            className="
-              text-[26px]
-              transition-transform
-              duration-300
-              group-hover:[transform:rotateY(180deg)]
-            "
-          >
-            <FaLocationDot />
-          </span>
-          переглянути на карті
-        </a>
       </div>
 
       {/* SOCIAL ICONS */}

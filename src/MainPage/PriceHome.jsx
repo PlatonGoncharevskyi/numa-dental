@@ -47,7 +47,7 @@ export default function PriceHome() {
       <p
         className="
           absolute
-          right-[5%]
+          right-[1%]
           text-[12px]
           bottom-17
           xl:right-[15%]

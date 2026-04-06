@@ -1,6 +1,10 @@
+import { useState } from "react";
 import Image from "../assets/background_home.png";
+import BookingModal from "../layout/BookingModal";
 
 export default function Home() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <section
       className="
@@ -47,7 +51,6 @@ export default function Home() {
         {/* SUBTITLE */}
         <p
           className="
-            
             xl:text-[22px] lg:text-[18px]
             tracking-[0.25em]
             text-[#555555]
@@ -56,37 +59,44 @@ export default function Home() {
           dental clinic
         </p>
 
-        {/* BUTTON */}
-        <a
-          href="https://t.me/numa_dental"
-          target="_blank"
-          rel="noopener noreferrer"
+        {/* BUTTON — змінено на button для виклику функції */}
+        <button
+          onClick={() => setIsModalOpen(true)}
           className="
             mt-10
             flex
             justify-center
             items-center
             rounded-full
-            w-[220px]
-            h-[60px]
-            bg-white
-            text-[#555555]
-            
+            w-[230px] sm:w-[280px]
+            h-[64px]
+            bg-[#333333]
+            text-white
+            shadow-lg
+            shadow-black/10
             font-quicksand
-            font-medium
-            text-[15px]
+            font-semibold
+            text-[16px]
             uppercase
-            tracking-[0.225em]
-            transition-all duration-500
-            hover:bg-[#555555]
-            hover:text-white
+            tracking-[0.2em]
+            transition-all 
+            duration-300
+            hover:bg-[#1a1a1a]
+            hover:shadow-xl
+            hover:-translate-y-1
+            active:scale-95
             cursor-pointer
             select-none
           "
         >
           записатися
-        </a>
+        </button>
       </div>
+
+      {/* Підключаємо модалку */}
+      {isModalOpen && (
+        <BookingModal onClose={() => setIsModalOpen(false)} />
+      )}
     </section>
   );
 }
