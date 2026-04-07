@@ -1,11 +1,10 @@
-import arrow from "/src/assets/arrow.svg"
+import { LuBookOpen } from "react-icons/lu";
 
 export default function PriceHome() {
   return (
-    <section className="relative w-full bg-white overflow-hidden pt-5 xl:ml-12 lg:ml-10 xl:pt-20 lg:pt-20 pb-30 lg:mt-15" >
-
-      {/* BIG PRICE */}
-      <div className="flex justify-center">
+    <section className="w-full bg-white pt-10 pb-20 lg:pt-20 lg:pb-32 px-4 overflow-hidden">
+      <div className="max-w-[1400px] mx-auto flex flex-col items-center">
+        
         <h2
           className="
             inline-flex
@@ -32,39 +31,72 @@ export default function PriceHome() {
             PRICE
           </a>
         </h2>
+
+        <a
+          href="/price"
+          className="
+            flex 
+            items-center 
+            gap-3 
+            bg-[#333333] 
+            hover:bg-[#555555] 
+            text-white 
+            px-6 
+            py-3 
+            lg:px-10 
+            lg:py-4 
+            rounded-full 
+            shadow-lg 
+            transition-all 
+            duration-300 
+            hover:scale-105
+            active:scale-95
+          "
+        >
+          <LuBookOpen className="text-[24px] lg:text-[30px]" />
+          
+          <span className="
+            uppercase 
+            font-semibold 
+            tracking-wider 
+            text-[14px] 
+            lg:text-[18px]
+            whitespace-nowrap
+          ">
+            Відкрити прайс-лист послуг
+          </span>
+        </a>
+
       </div>
-
-      <div className="lg:block absolute left-[45%] lg:left-[52%] xl:left-[52%] bottom-0 invert-[20%]">
-        <img
-          src={arrow}
-          alt="arrow"
-          className="xl:w-[150px] xl:h-[170px]
-                     lg:w-[130px] lg:h-[150px]
-                     w-[60px] h-[200px]"
-        />
-      </div>
-
-      <p
-        className="
-          absolute
-          right-[1%]
-          text-[12px]
-          bottom-17
-          xl:right-[15%]
-          lg:right-[12%]
-          xl:bottom-0
-          lg:bottom-5
-          text-left
-          xl:text-[25px]
-          lg:text-[18px]
-          leading-relaxed
-          text-[#555555]
-        "
-      >
-        Натисніть тут, щоб відкрити <br />
-        прайс послуг
-      </p>
-
     </section>
   );
 }
+
+/*
+        <h2
+          className="
+            inline-flex
+            text-[130px]
+            xl:text-[260px]
+            lg:text-[200px]
+            leading-none
+            xl:tracking-[0.25em]
+            lg:tracking-[0.2em]
+            text-[#333333]
+            font-blont
+          "
+        >
+          <a
+            href="/price"
+            className="
+              hover:text-[#555555]
+              transition-colors
+              duration-300
+              cursor-pointer
+              inline-block
+            "
+          >
+            PRICE
+          </a>
+        </h2>
+        */

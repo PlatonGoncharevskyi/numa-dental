@@ -70,7 +70,7 @@ export default function AboutHome() {
               прогнозованого і довготривалого результату.
             </p>
 
-            <div className="text-center xl:pt-4 ">
+           {/* <div className="text-center xl:pt-4 ">
               <a
                 href="/about-clinic#team"
                 className="
@@ -94,7 +94,7 @@ export default function AboutHome() {
               >
                 НАША КОМАНДА
               </a>
-            </div>
+            </div> */}
           </div>
 
         </div>

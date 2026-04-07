@@ -53,7 +53,7 @@ export default function Header() {
           <nav className="hidden xl:flex items-center gap-8 text-[16px] font-medium">
             <Link to="/about-clinic" className="hover:opacity-70 transition">ПРО КЛІНІКУ</Link>
             <Link to="/price" className="font-extrabold hover:opacity-70 transition">PRICE</Link>
-            <Link to="/about-clinic#team" className="hover:opacity-70 transition">КОМАНДА</Link>
+            {/* <Link to="/about-clinic#team" className="hover:opacity-70 transition">КОМАНДА</Link> */}
 
             {/* DROPDOWN SERVICES */}
             <div className="relative group">
@@ -98,10 +98,21 @@ export default function Header() {
             <a href="https://wa.me/380933891363" target="_blank" className="p-2 rounded-full bg-[#333333] text-white text-[20px] hover:bg-[#E6E6E6] hover:text-[#333] hover:scale-110 transition"><FaWhatsapp /></a>
             <a href="viber://chat?number=%2B380933891363" target="_blank" className="p-2 rounded-full bg-[#333333] text-white text-[20px] hover:bg-[#E6E6E6] hover:text-[#333] hover:scale-110 transition"><FaViber /></a>
             <a href="https://t.me/numa_dental" target="_blank" className="p-2 rounded-full bg-[#333333] text-white text-[20px] hover:bg-[#E6E6E6] hover:text-[#333] hover:scale-110 transition"><FaTelegramPlane /></a>
-          </div>
-          <div className="flex md:hidden landscape:hidden items-center gap-3 mr-6 mb-2">
-            <a href="tel:+380933891363" className="p-2 rounded-full bg-[#333333] text-white text-[20px] hover:bg-[#E6E6E6] hover:text-[#333] hover:scale-110 transition"><IoCall /></a>
-          </div>
+                      </div>
+            <div className="flex md:hidden landscape:hidden items-center mr-6 mb-2">
+              <a 
+                href="tel:+380933891363" 
+                className="flex items-center gap-2.5 group transition-opacity active:opacity-70"
+              >
+                    <span className="font-bold text-[#333333] text-[14px] tracking-wider whitespace-nowrap">
+                  +38 093 389 13 63
+                </span>
+                <span className="p-2 rounded-full bg-[#333333] text-white text-[18px]">
+                  <IoCall />
+                </span>
+
+              </a>
+            </div>
         </div>
       </header>
 
@@ -145,7 +156,7 @@ export default function Header() {
           <nav className="flex items-center gap-20 text-[16px] text-[#333333] font-medium">
             <Link to="/about-clinic" onClick={() => setMenuOpen(false)}>ПРО КЛІНІКУ</Link>
             <Link to="/price" onClick={() => setMenuOpen(false)} className="font-extrabold">PRICE</Link>
-            <a href="/about-clinic#team" onClick={() => setMenuOpen(false)}>КОМАНДА</a>
+            {/* <a href="/about-clinic#team" onClick={() => setMenuOpen(false)}>КОМАНДА</a> */}
             <a href="/#services" onClick={() => setMenuOpen(false)}>ПОСЛУГИ</a>
             <a href="/#contacts" onClick={() => setMenuOpen(false)}>КОНТАКТИ</a>
           </nav>
@@ -199,7 +210,7 @@ export default function Header() {
           <nav className="flex flex-col gap-3 text-[16px] font-medium text-[#333333] font-bold ml-5">
             <Link to="/about-clinic" onClick={() => setMenuOpen(false)}>ПРО КЛІНІКУ</Link>
             <Link to="/price" onClick={() => setMenuOpen(false)} className="font-extrabold font-blont">PRICE</Link>
-            <Link to="/about-clinic#team" onClick={() => setMenuOpen(false)}>КОМАНДА</Link>
+            {/* <Link to="/about-clinic#team" onClick={() => setMenuOpen(false)}>КОМАНДА</Link> */}
             <Link to="/#services" onClick={() => setMenuOpen(false)}>ПОСЛУГИ</Link>
             <Link to="/#contacts" onClick={() => setMenuOpen(false)}>КОНТАКТИ</Link>
           </nav>

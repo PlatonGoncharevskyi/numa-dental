@@ -153,7 +153,7 @@ export default function ServicesSection() {
                             w-full md:w-[240px] h-[56px] bg-[#333333] text-white
                             font-semibold text-[14px] uppercase tracking-[0.2em]
                             hover:bg-[#555555] active:scale-95
-                            transition-all duration-300"
+                            transition-all duration-300 cursor-pointer"
                         >
                           записатися
                         </button>
