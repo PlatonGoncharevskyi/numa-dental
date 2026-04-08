@@ -104,10 +104,10 @@ export default function Header() {
                 href="tel:+380933891363" 
                 className="flex items-center gap-2.5 group transition-opacity active:opacity-70"
               >
-                    <span className="font-bold text-[#333333] text-[14px] tracking-wider whitespace-nowrap">
+                    <span className="font-bold text-[#333333] text-[14px] tracking-wider whitespace-nowrap ">
                   +38 093 389 13 63
                 </span>
-                <span className="p-2 rounded-full bg-[#333333] text-white text-[18px]">
+                <span className="hidden min-[400px]:flex p-2 rounded-full bg-[#333333] text-white text-[18px]">
                   <IoCall />
                 </span>
 

@@ -108,10 +108,18 @@ export default function BookingModal({ isOpen, onClose }) {
                 <input
                   type="tel"
                   required
+                  maxLength={13}
                   placeholder="+380 (XX) XXX-XX-XX"
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#333333]"
                   value={formData.phone}
-                  onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                  onChange={(e) => {
+                    let val = e.target.value;
+                    if (val.length === 1 && val !== '+') {
+                      val = '+' + val;
+                    }
+                    const filtered = val.replace(/(?!^\+)[^\d]/g, "");
+                    setFormData({ ...formData, phone: filtered });
+                  }}
                 />
               </div>
 
